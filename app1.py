@@ -5,7 +5,7 @@ import pickle
 from sklearn.preprocessing import LabelEncoder
 
 # Load the model
-with open('Random.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 # Title of the app
 st.title('Titanic Survival Prediction')
