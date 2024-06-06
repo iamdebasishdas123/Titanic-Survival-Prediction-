@@ -1,5 +1,4 @@
-## Streamlit Link :- predictionsurvivaltitanic123
-.streamlit.app
+## Streamlit Link :- [Link](https://predictionsurvivaltitanic123.streamlit.app/)
 
 ### Project Description
 **Titanic Survival Prediction**
