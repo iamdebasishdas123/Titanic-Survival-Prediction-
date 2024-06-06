@@ -37,11 +37,11 @@ if Sex == 'female':
 else:
     Sex_male = 1
 if Embarked == 'C':
-    C = 1
+    Class = 1
 elif Embarked == 'Q':
-    Q = 2
+    Class = 2
 else:
-    S = 3
+    Class = 3
 
 # Encode title
 title_encoder = LabelEncoder()
@@ -49,7 +49,7 @@ title_encoder.classes_ = np.array(['Capt', 'Col', 'Countess', 'Don', 'Dona', 'Dr
 Title_encoded = title_encoder.transform([Title])[0]
 
 # Create the feature vector
-features = np.array([[Pclass, Fare, Age_group_Child, Age_group_Teen, Age_group_Adult, Age_group_Middle_Age, Age_group_Old, Sex_female, Sex_male, Embarked, Family_member, Title_encoded]])
+features = np.array([[Pclass, Fare, Age_group_Child, Age_group_Teen, Age_group_Adult, Age_group_Middle_Age, Age_group_Old, Sex_female, Sex_male, Class, Family_member, Title_encoded]])
 
 # Predict
 if st.button('Predict Survival'):
